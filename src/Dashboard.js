@@ -135,9 +135,6 @@ useEffect(() => {
               {sortedExpenses.map(e => (
                 <li key={e.expense_id} style={{ padding: '8px 0', borderBottom: '1px solid #e5e7eb' }}>
                   <strong>{e.title}</strong> - {e.amount.toLocaleString()} บาท
-                  <div style={{ fontSize: "12px", color: "#6b7280" }}>
-                    {new Date(e.date).toLocaleString("th-TH")}
-                  </div>
                 </li>
               ))}
             </ul>

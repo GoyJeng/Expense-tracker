@@ -278,8 +278,7 @@ function Expense() {
                     <div>
                     <p style={{ fontWeight: "600", color: "#111827" }}>{e.title}</p>
                         <p style={{ fontSize: "12px", color: "#6b7280" }}>
-                        {e.category} | {new Date(e.date).toLocaleDateString("th-TH")}{"  "} | {"เวลา"}
-                        {new Date(e.date).toLocaleTimeString("th-TH", { hour: "2-digit", minute: "2-digit" })}
+                        {e.category} | {new Date(e.date).toLocaleDateString("th-TH")}
                         </p>
                     </div>
                     <div style={{ color: "#ef4444", fontWeight: "600" }}>-{e.amount.toLocaleString()} บาท</div>
