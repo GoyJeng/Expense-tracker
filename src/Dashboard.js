@@ -122,8 +122,8 @@ useEffect(() => {
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
               <h3>รายการ {expenses.length} รายการ</h3>
               <select value={sortOption} onChange={(e) => setSortOption(e.target.value)}>
-                <option value="date_desc">📅 วันที่ล่าสุด</option>
-                <option value="date_asc">📅 วันที่เก่าสุด</option>
+                <option value="date_desc">📅 ล่าสุด</option>
+                <option value="date_asc">📅 เก่าสุด</option>
                 <option value="title_asc">🔤 ชื่อ (A-Z)</option>
                 <option value="title_desc">🔤 ชื่อ (Z-A)</option>
                 <option value="amount_desc">💸 จำนวนเงินมากสุด</option>
