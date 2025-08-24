@@ -409,8 +409,8 @@ useEffect(() => {
             </div>
           ) : (
             <div className="category-list">
-              {summary
-                .sort((a, b) => b.value - a.value) // เรียงจากมากไปน้อย
+              {[...summary]
+                .sort((a,b) => b.value - a.value)
                 .map((item, index) => (
                 <div key={item.name} className="category-item">
                   <div className="category-info">
